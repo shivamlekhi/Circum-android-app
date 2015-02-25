@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="H:\Android\Android Projects\CloseBy\app\build\intermediates\pre-dexed\debug\classes-f2f3b24dc44121261fdcc05aef85ac338970d46c.jar"
+        jar="H:\Android\Android Projects\CloseBy\app\build\intermediates\exploded-aar\CloseBy.app.libraries\facebook\unspecified\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="70c7ee2cdc876029f629c13b065e48db98bec2ff"/>
+    <item
+        dex="H:\Android\Android Projects\CloseBy\app\build\intermediates\pre-dexed\debug\classes-3515976107a1583a006b1b1adeb8a2bc4ec930eb.jar"
+        jar="H:\Android\Android Projects\CloseBy\app\build\intermediates\exploded-aar\de.hdodenhof\circleimageview\1.1.1\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1972d9d7e094b118493327a85760ebb50b8b9373"/>
+    <item
+        dex="H:\Android\Android Projects\CloseBy\app\build\intermediates\pre-dexed\debug\classes-faefdc5b40ad1590ddbfab5c3251b2189d43a1e8.jar"
+        jar="H:\Android\Android Projects\CloseBy\app\build\intermediates\exploded-aar\com.astuetz\pagerslidingtabstrip\1.0.1\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7912610ed96381c25c36d986eba422731b9641b6"/>
+    <item
+        dex="H:\Android\Android Projects\CloseBy\app\build\intermediates\pre-dexed\debug\Parse-1.5.0-c8176df2b7f71b5c003cb270478c475ba6785d6c.jar"
+        jar="H:\Android\Android Projects\CloseBy\app\libs\Parse-1.5.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="8a675f7e3312d8b28188ec653bbea6d435aaa7d1"/>
+    <item
+        dex="H:\Android\Android Projects\CloseBy\app\build\intermediates\pre-dexed\debug\classes-0ca2ccb944540edf2359aebf27a0333d4708c96c.jar"
+        jar="H:\Android\Android Projects\CloseBy\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\4.4.52\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3dfdf1db5ce5ea2999a5dcde8c8e650b02660059"/>
+    <item
+        dex="H:\Android\Android Projects\CloseBy\app\build\intermediates\pre-dexed\debug\support-v4-19.1.0-d265f70791f26db536e1b40d14d9dde2552d3ee9.jar"
+        jar="C:\Users\Sam\AppData\Local\Android\android-studio1\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="H:\Android\Android Projects\CloseBy\app\build\intermediates\pre-dexed\debug\classes-2b3007ca4e8062a308da283140faa3d632e3081c.jar"
+        jar="H:\Android\Android Projects\CloseBy\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+    <item
+        dex="H:\Android\Android Projects\CloseBy\app\build\intermediates\pre-dexed\debug\bolts-21e0ed335ec093b1a3bd4b41c2a5a6b6188e3f0c.jar"
+        jar="H:\Android\Android Projects\CloseBy\app\build\intermediates\exploded-aar\CloseBy.app.libraries\facebook\unspecified\libs\bolts.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1e5ba33c837d05dcca9dc40a0ab458f8599d7aef"/>
+
+</pre-dex-items>

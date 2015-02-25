@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="8">
+
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/CreateProfileImage"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:src="@drawable/image" />
+
+        <TextView
+            android:id="@+id/CreateProfileName"
+            android:text="User Name"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22dp"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/CreateProfileEmail"
+            android:text="Email"
+            android:gravity="center"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:textColor="#aaa"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="4"
+        android:background="@drawable/drop_shadow"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/AboutYouHeaderText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="About You"
+            android:textColor="#aaa"
+            android:gravity="center_vertical"
+            android:padding="7dp"
+            android:textSize="14dp"/>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:background="#ddd"
+            />
+
+        <EditText
+            android:id="@+id/create_profile_about_you"
+            android:background="@drawable/edit_text_custom"
+            android:text="@string/lipsum"
+            android:padding="10dp"
+            android:textColor="#2e2e2e"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:textSize="16dp"
+            android:gravity="top|left"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/create_profile_step1_done"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="10dp"
+        android:background="@color/madcar_redorange"
+        android:text="Done"
+        android:textColor="#fff"
+        />
+</LinearLayout>

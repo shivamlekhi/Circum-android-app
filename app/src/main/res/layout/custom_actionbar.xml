@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#505050"
+    android:weightSum="6">
+
+    <LinearLayout
+        android:id="@+id/open_menu_button"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent">
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/menu_icon"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/ActionBarTitle"
+        android:layout_width="0dp"
+        android:layout_weight="4"
+        android:layout_height="fill_parent"
+        android:text="CloseBy"
+        android:textSize="24dp"
+        android:textColor="#fff"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/action_status_button"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#2e2e2e">
+        <!--android:background="#69D2E7"-->
+
+        <TextView
+            android:id="@+id/online_status_text"
+            android:textSize="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DUMMY"
+            android:textColor="#fafafa"/>
+    </LinearLayout>
+
+</LinearLayout>

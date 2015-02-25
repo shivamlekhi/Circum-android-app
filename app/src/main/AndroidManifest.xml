@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.closeby"
+    android:installLocation="preferExternal">
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Required to show current location -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="com.closeby.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="com.closeby.permission.C2D_MESSAGE" />
+
+    <application
+        android:name="com.closeby.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Circum"
+        android:theme="@style/CustomActionBarTheme" >
+        <activity
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:name="com.closeby.MainActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity android:name=".SplashScreen" android:label="Close BY">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".CreateProfileFragment" android:label="Circum: Create Profile"/>
+
+        <activity android:name=".LoginSignupActivity" android:label="Circum : Login or Signup" />
+        <activity android:name="com.facebook.LoginActivity" />
+        <activity android:name=".ChatActivity" android:windowSoftInputMode="stateVisible|adjustNothing"/>
+
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+
+        <!-- Goolge Maps API Key -->
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCt-zrWOuUExBml6BQl8ib8X3LFG3YJMw4" />
+
+        <!--Parse Push Stuff-->
+        <service android:name="com.parse.PushService" />
+        <receiver android:name="com.parse.ParseBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.parse.GcmBroadcastReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+                <category android:name="com.closeby" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.closeby.CustomPushReciever" android:exported="false">
+            <intent-filter>
+                <action android:name="com.closeby.push_ping" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>

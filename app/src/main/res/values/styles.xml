@@ -1,0 +1,63 @@
+<resources>
+
+
+<!--
+    <declare-styleable name="CircularImageView">
+        <attr name="border" format="boolean"></attr>
+        <attr name="border_width" format="dimension"></attr>
+        <attr name="border_color" format="color"></attr>
+        <attr name="shadow" format="boolean"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="Theme">
+        <attr name="circularImageViewStyle" format="reference"></attr>
+    </declare-styleable>
+-->
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Item">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">300dp</item>
+    </style>
+
+    <style name="Item.Top">
+        <item name="android:background">#2e2e2e</item>
+    </style>
+
+    <style name="Item.Sticky">
+        <item name="android:background">#e74c3c</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:textAppearanceLarge</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <style name="Item.Bottom">
+        <item name="android:background">#008060</item>
+    </style>
+
+    <style name="Item.Bottom.Alt">
+        <item name="android:background">#009050</item>
+    </style>
+
+    <declare-styleable name="FoldingMenu">
+        <attr name="foldNumber" format="integer" />
+    </declare-styleable>
+
+    <color name="nephritis">#95D0B8</color>
+    <color name="alizarin">#e74c3c</color>
+    <color name="concrete">#ff4b5455</color>
+    <!--#65cac4-->
+    <color name="madcar_redorange">#F04158</color>
+    <color name="madcar_redorange_dark">#cc1029</color>
+    <color name="tab_indicator">#ffcc5851</color>
+    <color name="current_tab">#00a699</color>
+    <color name="madcar_peach">#FF9C5B</color>
+    <color name="madcar_pale">#FAD089</color>
+</resources>
